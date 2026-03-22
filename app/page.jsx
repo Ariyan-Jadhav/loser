@@ -128,7 +128,7 @@ function Page() {
         >
           <h1
             style={{
-              fontSize: "48px",
+              fontSize: "28px",
               fontWeight: "bold",
               marginBottom: "20px",
             }}
