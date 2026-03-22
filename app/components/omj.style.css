@@ -1,0 +1,682 @@
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+
+/* ─── Loader ─── */
+.loader-typewriter {
+  font-family: "Georgia", serif;
+  font-size: 12px;
+  color: rgba(252, 211, 77, 0.45);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: loaderType 2.2s steps(28, end) 0.5s forwards;
+}
+
+@keyframes loaderType {
+  to {
+    width: 260px;
+  }
+}
+
+.loader-title {
+  font-family: "Georgia", serif;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fcd34d;
+  letter-spacing: 12px;
+  opacity: 0;
+  transform: translateY(18px);
+  animation: loaderFadeUp 1s ease 1.6s forwards;
+}
+
+.loader-tagline {
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  color: rgba(252, 211, 77, 0.3);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: loaderFadeUp 1s ease 2.4s forwards;
+  margin-top: -10px;
+}
+
+.loader-chapters {
+  font-family: "Georgia", serif;
+  font-size: 11px;
+  color: rgba(252, 211, 77, 0.35);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: loaderFadeUp 1s ease 2.9s forwards;
+}
+
+.loader-bar-wrap {
+  width: 160px;
+  height: 1px;
+  background: rgba(252, 211, 77, 0.12);
+  margin-top: 8px;
+  opacity: 0;
+  animation: loaderFadeUp 0.5s ease 3.2s forwards;
+}
+
+.loader-bar {
+  height: 1px;
+  width: 0%;
+  background: #fcd34d;
+  animation: loaderBarGrow 7s linear 3.5s forwards;
+}
+
+@keyframes loaderFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loaderBarGrow {
+  to {
+    width: 100%;
+  }
+}
+
+.bg-img {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50%);
+  z-index: 1;
+}
+.fog-7 {
+  position: absolute;
+  width: 1900px;
+  top: calc(50% - 50px);
+  left: calc(50% + 150px);
+  z-index: 2;
+}
+.mountain-10 {
+  position: absolute;
+  width: 730px;
+  top: calc(50% + 90px);
+  left: calc(50% + 230px);
+  z-index: 3;
+}
+.fog-6 {
+  position: absolute;
+  width: 1610px;
+  top: calc(50% + 85px);
+  left: calc(50% - 93px);
+  z-index: 4;
+}
+.mountain-9 {
+  position: absolute;
+  width: 370px;
+  top: calc(50% + 113px);
+  left: calc(50% + 457px);
+  z-index: 5;
+}
+.mountain-8 {
+  position: absolute;
+  width: 630px;
+  top: calc(50% + 141px);
+  left: calc(50% - 230px);
+  z-index: 6;
+}
+.fog-5 {
+  position: absolute;
+  width: 450px;
+  top: calc(50% + 160px);
+  left: calc(50% - 20px);
+  z-index: 7;
+}
+.mountain-7 {
+  z-index: 8;
+  position: absolute;
+  width: 442px;
+  top: calc(50% + 69px);
+  left: calc(50% + 230px);
+}
+
+.text {
+  z-index: 9;
+  position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 6.5rem;
+  font-weight: bold;
+}
+
+.mountain-6 {
+  z-index: 10;
+  position: absolute;
+  width: 320px;
+  top: calc(50% + 60px);
+  left: calc(50% + 550px);
+}
+.fog-4 {
+  z-index: 11;
+  position: absolute;
+  width: 590px;
+  top: calc(50% + 223px);
+  left: calc(50% - 60px);
+}
+.mountain-5 {
+  z-index: 12;
+  position: absolute;
+  width: 408px;
+  top: calc(50% + 250px);
+  left: calc(50% + 130px);
+}
+.fog-3 {
+  z-index: 13;
+  position: absolute;
+  width: 1600px;
+  top: calc(50% + 116px);
+  left: calc(50% - 15px);
+}
+.mountain-4 {
+  z-index: 14;
+  position: absolute;
+  width: 994px;
+  top: calc(50% + 196px);
+  left: calc(50% + 260px);
+}
+.mountain-3 {
+  z-index: 15;
+  position: absolute;
+  width: 291px;
+  top: calc(50% + 196px);
+  left: calc(50% + 555px);
+}
+.fog-2 {
+  z-index: 16;
+  position: absolute;
+  width: 1400px;
+  top: calc(50% + 116px);
+  left: calc(50% + 122px);
+}
+.mountain-2 {
+  z-index: 17;
+  position: absolute;
+  width: 691px;
+  top: calc(50% + 169px);
+  left: calc(50% - 370px);
+}
+.mountain-1 {
+  z-index: 18;
+  position: absolute;
+  width: 391px;
+  top: calc(50% + 129px);
+  left: calc(50% - 555px);
+}
+.sun-rays {
+  position: absolute;
+  z-index: 19;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  width: 565px;
+}
+.fog-1 {
+  z-index: 21;
+  position: absolute;
+  width: 1400px;
+  top: calc(100% - 205px);
+  left: calc(50% + 90px);
+}
+.vignette {
+  position: absolute;
+  z-index: 22;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.7)
+  );
+  pointer-events: none;
+}
+
+.shishu-1 {
+  position: absolute;
+  z-index: 20;
+  width: 345px;
+  top: calc(100% - 130px);
+  left: calc(50% + 10px);
+}
+
+/* 2nd PArt */
+
+.food-1 {
+  /* dahipuri */
+  position: absolute;
+  z-index: 2;
+  width: 155px;
+  top: calc(100% - 265px);
+  left: calc(50% - 590px);
+}
+.food-2 {
+  /* aalu */
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+  top: calc(100% - 590px);
+  left: calc(50% + 260px);
+}
+.food-3 {
+  /* dalma */
+  position: absolute;
+  width: 170px;
+  top: calc(100% - 435px);
+  z-index: 2;
+  left: calc(50% + 120px);
+}
+.food-4 {
+  /* dhaibara */
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  top: calc(100% - 515px);
+  left: calc(50% + 190px);
+}
+.food-5 {
+  /* pakhala */
+  position: absolute;
+  z-index: 2;
+  width: 180px;
+  top: calc(100% - 530px);
+  left: calc(50% - 380px);
+}
+.food-6 {
+  /* poha */
+  position: absolute;
+  z-index: 2;
+  width: 190px;
+  top: calc(100% - 580px);
+  left: calc(50% - 540px);
+}
+.food-7 {
+  /* chicken */
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: calc(100% - 80px);
+  left: calc(50% - 570px);
+}
+.food-8 {
+  /* coffee */
+  position: absolute;
+  z-index: 2;
+  width: 140px;
+  top: calc(100% - 190px);
+  left: calc(50% + 138px);
+}
+.food-9 {
+  /* pizza */
+  position: absolute;
+  width: 230px;
+  z-index: 2;
+  top: calc(100% - 270px);
+  left: calc(50% - 430px);
+}
+.food-10 {
+  /* thali */
+  z-index: 2;
+  position: absolute;
+  width: 290px;
+  top: calc(100% - 68px);
+  left: calc(50% - 230px);
+}
+.food-11 {
+  /* chole */
+  position: absolute;
+  z-index: 2;
+  width: 230px;
+  top: calc(100% - 345px);
+  left: calc(50% + 140px);
+}
+.food-12 {
+  /* panipuri */
+  position: absolute;
+  z-index: 2;
+  width: 190px;
+  top: calc(100% - 430px);
+  left: calc(50% - 540px);
+}
+.food-13 {
+  /* gulaabjamoon */
+  position: absolute;
+  z-index: 2;
+  width: 85px;
+  top: calc(100% - 430px);
+  left: calc(50% - 391px);
+}
+.food-14 {
+  /* curry */
+  position: absolute;
+  z-index: 2;
+  width: 140px;
+  top: calc(100% - 375px);
+  left: calc(50% + 333px);
+}
+.food-15 {
+  /* dosa */
+  position: absolute;
+  z-index: 2;
+  width: 250px;
+  top: calc(100% - 260px);
+  left: calc(50% + 490px);
+}
+.food-16 {
+  /* paratha */
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: calc(100% - 570px);
+  left: calc(50% + 48px);
+}
+.food-17 {
+  /* machara */
+  position: absolute;
+  width: 169px;
+  z-index: 2;
+  top: calc(100% - 230px);
+  left: calc(50% - 238px);
+}
+.food-18 {
+  /* biryani */
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: calc(100% - 80px);
+  left: calc(50% + 348px);
+}
+.food-19 {
+  /* fish-curry */
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: calc(100% - 390px);
+  left: calc(50% - 238px);
+}
+.food-20 {
+  /* sambhar-vada */
+  position: absolute;
+  z-index: 2;
+  width: 170px;
+  top: calc(100% - 250px);
+  left: calc(50% + 278px);
+}
+.food-21 {
+  /* butter-chicken */
+  position: absolute;
+  z-index: 2;
+  width: 150px;
+  top: calc(100% - 77px);
+  left: calc(50% - 450px);
+}
+.food-22 {
+  /* pasta */
+  position: absolute;
+  z-index: 2;
+  width: 230px;
+  top: calc(100% - 504px);
+  left: calc(50% + 490px);
+}
+.food-23 {
+  /* fish-fry */
+  position: absolute;
+  z-index: 2;
+  width: 165px;
+  top: calc(100% - 530px);
+  left: calc(50% - 158px);
+}
+.food-24 {
+  /* rabbit */
+  position: absolute;
+  z-index: 2;
+  width: 180px;
+  top: calc(100% - 90px);
+  left: calc(50% + 498px);
+}
+.food-25 {
+  /* dal */
+  position: absolute;
+  z-index: 2;
+  width: 180px;
+  top: calc(100% - 70px);
+  left: calc(50% + 148px);
+}
+.shishu-2 {
+  position: absolute;
+  z-index: 36;
+  width: 390px;
+  top: calc(100% - 190px);
+  left: calc(50% - 60px);
+}
+.parallax {
+  pointer-events: none;
+  position: absolute;
+  transition: 0.45s cubic-bezier(0.2, 0.49, 0.39, 0.99);
+  transform: translate(-50%, -34%);
+}
+
+/* cherry */
+
+.cherry-bgc {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  z-index: 1;
+}
+
+.cherry-1 {
+  position: absolute;
+  z-index: 2;
+  width: 520px;
+  top: calc(100% - 435px);
+  left: calc(50% + 468px);
+}
+.cherry-3 {
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  top: calc(100% - 435px);
+  left: calc(50% + 298px);
+}
+.cherry-4 {
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  top: calc(100% - 335px);
+  left: calc(50% + 198px);
+}
+.cherry-5 {
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  top: calc(100% - 235px);
+  left: calc(50% + 238px);
+}
+.cherry-6 {
+  position: absolute;
+  z-index: 2;
+  width: 55px;
+  top: calc(100% - 345px);
+  left: calc(50% - 218px);
+}
+.cherry-7 {
+  position: absolute;
+  z-index: 2;
+  width: 55px;
+  top: calc(100% - 330px);
+  left: calc(50% - 268px);
+}
+.shishu-3 {
+  position: absolute;
+  z-index: 20;
+  width: 405px;
+  top: calc(100% - 290px);
+  left: calc(50% + 8px);
+}
+.shishu-4 {
+  position: absolute;
+  z-index: 20;
+  width: 555px;
+  top: calc(100% - 140px);
+  left: calc(50% + 8px);
+}
+
+.mic-bgc {
+  position: absolute;
+  width: 4000px;
+  top: calc(50% - 70px);
+  left: calc(50%);
+  z-index: 1;
+}
+
+.mic-1 {
+  position: absolute;
+  z-index: 2;
+  width: 605px;
+  top: calc(100% - 540px);
+  left: calc(50% + 450px);
+}
+.mic-2 {
+  position: absolute;
+  z-index: 2;
+  width: 505px;
+  top: calc(100% - 500px);
+  left: calc(50% - 350px);
+}
+.mic-3 {
+  position: absolute;
+  z-index: 2;
+  width: 505px;
+  top: calc(100% - 310px);
+  left: calc(50% - 60px);
+}
+.mic-4 {
+  position: absolute;
+  z-index: 3;
+  width: 350px;
+  top: calc(100% - 595px);
+  left: calc(50% - 300px);
+}
+.mic-5 {
+  position: absolute;
+  z-index: 3;
+  width: 235px;
+  top: calc(100% - 120px);
+  left: calc(50% + 320px);
+}
+
+/* kid */
+
+.kid-bgc {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50%);
+  z-index: 1;
+}
+
+.kid-1 {
+  position: absolute;
+  z-index: 1;
+  width: 305px;
+  top: calc(100% - 220px);
+  left: calc(50% - 480px);
+}
+.kid-2 {
+  position: absolute;
+  z-index: 1;
+  width: 355px;
+  top: calc(100% - 220px);
+  left: calc(50% + 480px);
+}
+.kid-2 {
+  position: absolute;
+  z-index: 1;
+  width: 355px;
+  top: calc(100% - 220px);
+  left: calc(50% + 480px);
+}
+.kid-3 {
+  position: absolute;
+  z-index: 1;
+  width: 105px;
+  top: calc(100% - 110px);
+  left: calc(50% - 635px);
+}
+.kid-4 {
+  position: absolute;
+  z-index: 1;
+  width: 305px;
+  top: calc(100% - 147px);
+  left: calc(50% - 209px);
+}
+.kid-5 {
+  position: absolute;
+  z-index: 1;
+  width: 305px;
+  top: calc(100% - 180px);
+  left: calc(50% + 270px);
+}
+.kid-6 {
+  position: absolute;
+  z-index: 1;
+  width: 135px;
+  top: calc(100% - 400px);
+  left: calc(50% + 270px);
+}
+.kid-7 {
+  position: absolute;
+  z-index: 1;
+  width: 135px;
+  top: calc(100% - 300px);
+  left: calc(50% - 270px);
+}
+
+.kid-10 {
+  position: absolute;
+  z-index: 1;
+  width: 95px;
+  top: calc(100% - 340px);
+  left: calc(50% - 160px);
+}
+.kid-11 {
+  position: absolute;
+  z-index: 1;
+  width: 135px;
+  top: calc(100% - 450px);
+  left: calc(50% + 475px);
+}
+
+.kid-14 {
+  position: absolute;
+  z-index: 1;
+  width: 235px;
+  top: calc(100% - 310px);
+  left: calc(50% + 70px);
+}
+.shishu-5 {
+  position: absolute;
+  z-index: 20;
+  width: 565px;
+  top: calc(100% - 170px);
+  left: calc(50% + 328px);
+}
+.shishu-51 {
+  position: absolute;
+  z-index: 20;
+  width: 305px;
+  top: calc(100% - 170px);
+  left: calc(50% - 328px);
+}
