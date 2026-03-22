@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "wiwiwi",
-  description: "chapad chapad",
+  title: "Loser",
+  description: "parallax everywhere",
 };
 
 export default function RootLayout({ children }) {
